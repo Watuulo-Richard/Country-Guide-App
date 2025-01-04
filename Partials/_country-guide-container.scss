@@ -28,12 +28,6 @@
                 font-weight: 600;
                 padding: 1rem 2rem;
                 width: 100%;
-                & i {
-                    display: none;
-                }
-                & p {
-                    
-                }
             }
         }
     }
@@ -132,9 +126,6 @@
                     font-weight: 600;
                     padding: 1rem 2rem;
                     width: 100%;
-                    & i {
-                        display: none; 
-                    }
                     & p {
                         font-size: 1.5rem;
                     }
@@ -209,13 +200,13 @@
     }
     @media (max-width: 768px){
         .country-search-container {
-            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: space-between;
             .input-container {
-                width: 70%;
+                width: 100%;
                 #countryInput {
-                    width: 90%;
+                    width: 100%;
                     border: none;
                     outline: none;
                     font-size: 1rem;
@@ -226,7 +217,8 @@
                 }
             }
             .button-container {
-                width: 30%;
+                width: 100%;
+                margin: .5rem 0rem;
                 #searchBtn {
                     border: none;
                     border-radius: .5rem;
@@ -236,11 +228,8 @@
                     background: #4d1d95b7;
                     font-weight: 600;
                     width: 100%;
-                    & i {
-                        font-size: 1.5rem;
-                    }
                     & p {
-                       display: none; 
+                       font-size: 1rem; 
                     }
                 }
             }
